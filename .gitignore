@@ -7,10 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build output
 dist
 dist-ssr
+*.tsbuildinfo
+
+# Local environment
 *.local
+.env*
+!.env.example
+
+# Test output
+coverage/
 
 # Editor directories and files
 .vscode/*
@@ -23,8 +34,6 @@ dist-ssr
 *.sln
 *.sw?
 
+# Chrome extension artifacts / secrets
 *.crx
 *.pem
-
-.env*
-*.tsbuildinfo
